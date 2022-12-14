@@ -1,0 +1,10 @@
+{% extends "home.html" %}
+
+{% block content %}
+<head><a href="{{ url_for('home') }}">Home</a></head>
+        <h1>Student Information about {{student.name}}</h1>
+            <p>Student name: {{student.name}}</p>
+            <p> Grades: {{ student.grades }}</p>
+            <p> Overall GPA for {{student.name}} is {{student.gpa}}</p>
+{% endblock %}
+
